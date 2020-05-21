@@ -76,6 +76,16 @@
         }
       }
     },
+    "revery": {
+      "source": "git://gitlab.kitware.com/cmake/cmake.git#9ec09f22ff1b1109d9bb7b4e8d1aec5663029cd3",
+      "override": {
+        "build": [
+          "./bootstrap --prefix=#{self.prefix}",
+          "make",
+          "make install"
+        ]
+      }
+    },
     "reason-skia": {
       "source": "revery-ui/reason-skia#ce4185d23f4af25519a0fc1b214bd844f49bf9a7",
       "override": {
