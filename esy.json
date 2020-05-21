@@ -40,7 +40,11 @@
     }
   },
   "dependencies": {
-    "@opam/dune": ">=1.6.0"
+    "@opam/dune": ">=1.6.0",
+    "@opam/ppx_tools": "6.0+4.08.0",
+    "@brisk/brisk-reconciler": "briskml/brisk-reconciler#10cab2d",
+    "revery-text-wrap": "revery-ui/revery-text-wrap#966383e",
+    "@opam/seq": "base"
   },
   "_dependencies": {
     "reason-skia": "revery-ui/reason-skia#6b459c7",
