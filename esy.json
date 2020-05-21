@@ -51,7 +51,9 @@
     "@opam/ctypes": "0.15.1",
     "esy-sdl2": "revery-ui/esy-sdl2#1a4f009ebaff96747a46feae9c689639f232a958",
     "reason-sdl2": "revery-ui/reason-sdl2#7d36674f7e48b7a1a5941a9e53bfe7ef2273eaf1",
-    "esy-skia": "revery-ui/esy-skia#d60e5fe"
+    "esy-skia": "revery-ui/esy-skia#d60e5fe",
+    "reason-skia": "revery-ui/reason-skia#6b459c7",
+    "@glennsl/timber": "glennsl/timber#eb1ea5fe4c67d6d6cd873e48809a1860bb66c31"
   },
   "_dependencies": {
     "reason-skia": "revery-ui/reason-skia#6b459c7",
