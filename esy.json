@@ -1,0 +1,122 @@
+{
+  "name": "Camlculus",
+  "version": "0.2.1",
+  "description": "Camlculus by AkTeX",
+  "license": "MIT",
+  "scripts": {
+    "format": "bash -c \"refmt --in-place *.re\"",
+    "run": "esy x Camlculus"
+  },
+  "esy": {
+    "build": "dune build -p Camlculus",
+    "buildsInSource": "_build",
+    "install": [
+      "esy-installer Camlculus.install"
+    ]
+  },
+  "revery-packager": {
+    "bundleName": "Camlculus",
+    "bundleId": "com.Camlculus.app",
+    "displayName": "Revery Camlculus",
+    "mainExecutable": "Camlculus",
+    "windows": {
+      "packages": [
+        "zip"
+      ],
+      "iconFile": "assets/icon.ico"
+    },
+    "darwin": {
+      "packages": [
+        "tar",
+        "dmg"
+      ],
+      "iconFile": "assets/icon.icns"
+    },
+    "linux": {
+      "packages": [
+        "tar",
+        "appimage"
+      ]
+    }
+  },
+  "dependencies": {
+    "@opam/dune": ">=1.6.0",
+    "@opam/ppx_tools": "6.0+4.08.0",
+    "@brisk/brisk-reconciler": "briskml/brisk-reconciler#10cab2d",
+    "revery-text-wrap": "revery-ui/revery-text-wrap#966383e",
+    "@opam/seq": "base",
+    "yarn-pkg-config": "esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79",
+    "esy-cmake": "0.3.5",
+    "esy-freetype2": "2.9.1007",
+    "@opam/ctypes": "0.15.1",
+    "esy-skia": "revery-ui/esy-skia#d60e5fe",
+    "esy-sdl2": "revery-ui/esy-sdl2#1a4f009ebaff96747a46feae9c689639f232a958",
+    "reason-sdl2": "revery-ui/reason-sdl2#7d36674f7e48b7a1a5941a9e53bfe7ef2273eaf1",
+    "reason-skia": "revery-ui/reason-skia#6b459c7",
+    "@glennsl/timber": "glennsl/timber#eb1ea5fe4c67d6d6cd873e48809a1860bb66c31",
+    "rench": "revery-ui/rench#efa53a609ad98b035b0621cbcfe48e415545fa3e",
+    "revery": "revery-ui/revery#faf03f4ae69607b6657b94a742b7fda4d6dac9cb"
+  },
+  "_dependencies": {
+    "reason-skia": "revery-ui/reason-skia#6b459c7",
+    "@opam/dune": ">=1.1.0",
+    "@opam/ocamlformat": ">=0.14.0",
+    "@opam/yojson": ">=1.7.0",
+    "esy-macdylibbundler": "*",
+    "rebez": "jchavarri/rebez#03fa3b7",
+    "revery": "revery-ui/revery#faf03f4ae69607b6657b94a742b7fda4d6dac9cb",
+    "timber": "^1.0.0"
+  },
+  "resolutions": {
+    "revery": {
+      "source": "revery-ui/revery#faf03f4ae69607b6657b94a742b7fda4d6dac9cb",
+      "override": {
+        "dependencies": {
+          "reperf": null
+        }
+      }
+    },
+    "reason-skia": {
+      "source": "revery-ui/reason-skia#ce4185d23f4af25519a0fc1b214bd844f49bf9a7",
+      "override": {
+        "build": "dune build -p skia",
+        "dependencies": {
+          "refmterr": null
+        }
+      }
+    },
+    "reason-sdl2": {
+      "source": "Et7f3/reason-sdl2#e0944a356251555d80eea01317ce12381741aed5",
+      "override": {
+        "dependencies": {
+          "refmterr": null
+        }
+      }
+    },
+    "esy-sdl2": "revery-ui/esy-sdl2#3c9f2452b7dcb62144a5608e975c5d7c63e74b12",
+    "@glennsl/timber": "glennsl/timber#eb1ea5fe4c67d6d6cd873e48809a1860bb66c31c",
+    "ocaml": {
+      "source": "esy-ocaml/ocaml#8337d963d41fafd6a32819d20e64a811bed0bbc3",
+      "override": {
+        "buildEnv": {
+        }
+      }
+    },
+    "rench": "revery-ui/rench#efa53a609ad98b035b0621cbcfe48e415545fa3e",
+    "esy-harfbuzz": 
+    {
+      "source": "github:Et7f3/esy-harfbuzz#4309597b403374fe65868e8971c114555c96c6e4",
+      "override": 
+      {
+        "buildEnv": 
+        {
+          "CMAKE_LEGACY_CYGWIN_WIN32": "1",
+          "CFLAGS": "-Wno-dev"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "ocaml": "~4.8.0"
+  }
+}
