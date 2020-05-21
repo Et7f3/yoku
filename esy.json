@@ -103,19 +103,6 @@
       }
     },
     "rench": "revery-ui/rench#efa53a609ad98b035b0621cbcfe48e415545fa3e",
-    "esy-harfbuzz": 
-    {
-      "source": "github:Et7f3/esy-harfbuzz#4309597b403374fe65868e8971c114555c96c6e4",
-      "override": 
-      {
-        "buildEnv": 
-        {
-          "CMAKE_LEGACY_CYGWIN_WIN32": "1",
-          "CFLAGS": "-Wno-dev"
-        }
-      }
-    }
-  },
   "devDependencies": {
     "ocaml": "~4.8.0"
   }
