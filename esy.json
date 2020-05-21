@@ -80,7 +80,7 @@
       "source": "git+https://gitlab.kitware.com/cmake/cmake.git#9ec09f22ff1b1109d9bb7b4e8d1aec5663029cd3",
       "override": {
         "buildEnv": {
-          "CC": "#{os == 'windows' ? 'x86_64-w64-mingw32-gcc' : 'cc'}",
+          "CC": "#{os == 'windows' ? 'x86_64-w64-mingw32-g++' : 'cc'}",
           "CCX": "#{os == 'windows' ? 'x86_64-w64-mingw32-g++' : 'c++'}",
           "CXXFLAGS": "-x c++ -std=c++11"
         },
