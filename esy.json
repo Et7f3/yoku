@@ -85,6 +85,8 @@
           "CXXFLAGS": "-x c++ -std=c++11"
         },
         "build": [
+          "touch a.cpp",
+          "bash -c \"$CC $CXXFLAGS a.cpp\"",
           "./bootstrap --prefix=#{self.install}",
           "make",
           "make install"
