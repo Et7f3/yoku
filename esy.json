@@ -48,7 +48,9 @@
     "yarn-pkg-config": "esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79",
     "esy-cmake": "0.3.5",
     "esy-freetype2": "2.9.1007",
-    "@opam/ctypes": "0.15.1"
+    "@opam/ctypes": "0.15.1",
+    "esy-skia": "revery-ui/esy-skia#d60e5fe",
+    "esy-sdl2": "revery-ui/esy-sdl2#1a4f009ebaff96747a46feae9c689639f232a958"
   },
   "_dependencies": {
     "reason-skia": "revery-ui/reason-skia#6b459c7",
