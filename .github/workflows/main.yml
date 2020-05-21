@@ -7,7 +7,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [window-2016]
     steps:
       - uses: actions/setup-node@v1
         with:
@@ -35,7 +35,9 @@ jobs:
         with:
           path: ${{ steps.print_esy_cache.outputs.esy_cache }}
           key: build-${{ matrix.os }}-${{ hashFiles('**/index.json') }}
-          restore-keys: build-${{ matrix.os }}-
+          restore-keys: |
+            build-${{ matrix.os }}-
+            build-windows-latest-
 
       - name: Build
         run: |
