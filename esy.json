@@ -47,7 +47,8 @@
     "@opam/seq": "base",
     "yarn-pkg-config": "esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79",
     "esy-cmake": "0.3.5",
-    "esy-freetype2": "2.9.1007"
+    "esy-freetype2": "2.9.1007",
+    "@opam/ctypes": "0.15.1"
   },
   "_dependencies": {
     "reason-skia": "revery-ui/reason-skia#6b459c7",
