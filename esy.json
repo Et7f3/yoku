@@ -45,7 +45,9 @@
     "@brisk/brisk-reconciler": "briskml/brisk-reconciler#10cab2d",
     "revery-text-wrap": "revery-ui/revery-text-wrap#966383e",
     "@opam/seq": "base",
-    "yarn-pkg-config": "esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79"
+    "yarn-pkg-config": "esy-ocaml/yarn-pkg-config#db3a0b63883606dd57c54a7158d560d6cba8cd79",
+    "esy-cmake": "0.3.5",
+    "esy-freetype2": "2.9.1007"
   },
   "_dependencies": {
     "reason-skia": "revery-ui/reason-skia#6b459c7",
