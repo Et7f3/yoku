@@ -87,7 +87,7 @@
         },
         "build": [
           "touch a.cpp",
-          "bash -c \"$CC $CXXFLAGS a.cpp\"",
+          "bash -c \"$CC $CXXFLAGS a.cpp $LDFLAGS\"",
           "./bootstrap --prefix=#{self.install}",
           "make",
           "make install"
