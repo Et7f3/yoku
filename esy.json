@@ -101,13 +101,6 @@
     },
     "esy-sdl2": "revery-ui/esy-sdl2#3c9f2452b7dcb62144a5608e975c5d7c63e74b12",
     "@glennsl/timber": "glennsl/timber#eb1ea5fe4c67d6d6cd873e48809a1860bb66c31c",
-    "ocaml": {
-      "source": "esy-ocaml/ocaml#8337d963d41fafd6a32819d20e64a811bed0bbc3",
-      "override": {
-        "buildEnv": {
-        }
-      }
-    },
     "rench": "revery-ui/rench#efa53a609ad98b035b0621cbcfe48e415545fa3e"
   },
   "devDependencies": {
