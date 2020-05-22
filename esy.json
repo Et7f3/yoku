@@ -68,7 +68,7 @@
     "timber": "^1.0.0"
   },
   "resolutions": {
-    "esy-cmake": "esy-packages/esy-cmake#36f9dae25d70cd545249d277f731550780bf9506",
+    "esy-cmake": "Et7f3/esy-cmake-1#36f9dae25d70cd545249d277f731550780bf9506",
     "esy-freetype2": {
       "source": "esy-packages/esy-freetype2#6c88e3b8dbf838481535f519a96955c767f7b653",
       "override": {
