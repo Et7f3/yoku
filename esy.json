@@ -86,7 +86,7 @@
           "LDFLAGS": "#{ $LDFLAGS } -lmingw32"
         },
         "build": [
-          "./bootstrap --prefix=#{self.install}",
+          "bash -c \"./bootstrap --prefix=#{self.install}; cat #{self.install}/Bootstrap.cmk/cmake_bootstrap.log\"",
           "make",
           "make install",
           "touch a.cpp",
