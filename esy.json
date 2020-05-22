@@ -68,8 +68,8 @@
     "timber": "^1.0.0"
   },
   "resolutions": {
-    "esy-harfbuzz": {
-      "source": "esy-packages/esy-harfbuzz#f932e0fa1bfb128746ea4cf199747c3f762c7f3c",
+    "esy-freetype2": {
+      "source": "esy-packages/esy-freetype2#6c88e3b8dbf838481535f519a96955c767f7b653",
       "override": {
         "PATH": "#{ $PATH : '/usr/x86_64-w64-mingw32/sys-root/mingw/bin' }"
       }
