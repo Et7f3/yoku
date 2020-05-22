@@ -68,30 +68,18 @@
     "timber": "^1.0.0"
   },
   "resolutions": {
+    "esy-harfbuzz": {
+      "source": "esy-packages/esy-harfbuzz#f932e0fa1bfb128746ea4cf199747c3f762c7f3c",
+      "override": {
+        "PATH": "#{ $PATH : '/usr/x86_64-w64-mingw32/sys-root/mingw/bin' }"
+      }
+    },
     "revery": {
       "source": "revery-ui/revery#faf03f4ae69607b6657b94a742b7fda4d6dac9cb",
       "override": {
         "dependencies": {
           "reperf": null
         }
-      }
-    },
-    "esy-cmake": {
-      "source": "git+https://gitlab.kitware.com/cmake/cmake.git#9ec09f22ff1b1109d9bb7b4e8d1aec5663029cd3",
-      "override": {
-        "buildEnv": {
-          "CC": "#{os == 'windows' ? 'x86_64-w64-mingw32-gcc' : 'cc'}",
-          "CCX": "#{os == 'windows' ? 'x86_64-w64-mingw32-g++' : 'c++'}",
-          "CXXFLAGS": "-x c++ -std c++11",
-          "LDFLAGS": "#{ $LDFLAGS } -lmingw32"
-        },
-        "build": [
-          "bash -c \"./bootstrap --prefix=#{self.install} || :; cat #{self.root}/Bootstrap.cmk/cmake_bootstrap.log\"",
-          "make",
-          "make install",
-          "touch a.cpp",
-          "bash -c \"$CC $CXXFLAGS a.cpp $LDFLAGS\""
-        ]
       }
     },
     "reason-skia": {
