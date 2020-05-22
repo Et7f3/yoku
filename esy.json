@@ -82,7 +82,7 @@
         "buildEnv": {
           "CC": "#{os == 'windows' ? 'x86_64-w64-mingw32-gcc' : 'cc'}",
           "CCX": "#{os == 'windows' ? 'x86_64-w64-mingw32-g++' : 'c++'}",
-          "CXXFLAGS": "-x c++ -std\=c++11",
+          "CXXFLAGS": "-x c++ -std c++11",
           "LDFLAGS": "#{ $LDFLAGS } -lmingw32"
         },
         "build": [
